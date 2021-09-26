@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 11px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #000000;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: rgb(81, 0, 148);
+    border-radius: 50px 50px 50px 50px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: rgb(64, 1, 100);
+    }
+    
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, .85)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 97%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    background: rgb(137, 84, 223);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.intro{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    color: rgb(137, 84, 223);
+}
+
+.intro h1{
+    font-size: 50px;
+    margin: 25px;
+    
+}
+
+.intro p{
+    line-height: 1.5em;
+}
+
+.intro img{
+    width: 15%;
+    height: 15%;
+    border: 3px solid rgb(137, 84, 223);
+    border-radius: 50%;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    width: 100%; 
+    background-color: rgb(137, 84, 223);
+}
+
+.projTitle{
+    text-align: center;
+    color: rgb(81, 0, 148);
+    background-color: rgb(137, 84, 223);
+}
+
+.grid{
+    display: grid;
+    width: 110em;
+    grid-template-columns: repeat(auto-fit, minmax(27em, 10em));
+    align-items: start;
+}
+
+.grid-item{
+    background-color: rgb(81, 0, 148);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .95);
+    transition: 0.2s;
+}
+
+.grid-item:hover{
+    transform: translateY(-0.5%);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, .95);
+}
+
+.card-img{
+    display: block;
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 1rem;
+    padding-left: 1rem;
+}
+
+.card-header{
+    font-size: 3rem;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.card-text{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7em;
+    color: white;
+}
+
+
+@media screen{
+    .grid{
+        grid-gap: 6rem;
+        justify-content: center;        
+    }
+
+    .projects{
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    .projTitle{
+        padding-top: 3rem;
+    }
+}
+
+.languages{
+    background-color: rgb(81, 0, 148);
+    padding: 40px;
+    text-align: center;
+    color: rgb(137, 84, 223);
+}
+
+.languages img{
+    height: 110px;
+    width: 100px;
+    padding: 25px;
+    padding-top: 35px;
+}
+
+.experience{
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background-color: rgb(137, 84, 223);
+}
+
+.box{
+    color: white; 
+    text-align: center;
+    padding: 5%;
+    line-height: 1.5em;
+}
+
+.expTitle{
+    color: rgb(81, 0, 148);
+    text-align: center;
+    background-color: rgb(137, 84, 223);
+    padding-top: 48px;
+}
+
+.box-img{
+    height: 200px;
+    width: 200px;
+}
+
+.box-content{
+    line-height: 1.5em;
+}
+
+@font-face {
+    font-family: Fira Code;
+    src: url(./FiraCode-Retina.ttf);
+}
+
