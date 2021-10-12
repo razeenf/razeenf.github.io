@@ -82,11 +82,12 @@
 .intro h1{
     font-size: 50px;
     margin: 25px;
-    
 }
 
 .intro p{
-    line-height: 1.5em;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7em;
 }
 
 .intro img{
@@ -141,12 +142,12 @@
 .card-content{
     padding: 1rem;
     padding-left: 1rem;
+    color: whitesmoke;
 }
 
 .card-header{
     font-size: 3rem;
     font-weight: 200;
-    color: white;
     margin-bottom: 1rem;
 }
 
@@ -154,13 +155,12 @@
     font-size: 1rem;
     letter-spacing: 0.1rem;
     line-height: 1.7em;
-    color: white;
 }
 
 
 @media screen{
     .grid{
-        grid-gap: 6rem;
+        grid-gap: 4rem;
         justify-content: center;        
     }
 
@@ -182,10 +182,10 @@
 }
 
 .languages img{
-    height: 110px;
+    height: 100px;
     width: 100px;
     padding: 25px;
-    padding-top: 35px;
+    padding-right: 50px;
 }
 
 .experience{
@@ -193,15 +193,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5%;
     background-color: rgb(137, 84, 223);
-}
-
-.box{
-    color: white; 
-    text-align: center;
-    padding: 5%;
-    line-height: 1.5em;
+    padding-bottom: 2%;
 }
 
 .expTitle{
@@ -211,17 +204,66 @@
     padding-top: 48px;
 }
 
-.box-img{
-    height: 200px;
-    width: 200px;
-}
-
-.box-content{
+.box{
+    color: whitesmoke;
     line-height: 1.5em;
+    margin: 60px;
+    border: 5px solid rgb(81, 0, 148);
+    border-radius: 1rem;
+    letter-spacing: 0.1rem;
 }
 
-@font-face {
-    font-family: Fira Code;
-    src: url(./FiraCode-Retina.ttf);
+.box-banner1{
+    background-image: linear-gradient(rgb(137, 84, 223, .7), rgb(137, 84, 223, 1)), url(r3Banner.jpg);
+    background-size: 100%;
+    background-position: top;
+    border-radius: 3%;
 }
 
+.box-banner2{
+    background-image: linear-gradient(rgb(137, 84, 223, .8), rgb(137, 84, 223, 1)), url(ruBanner.jpg);
+    background-size: 100%;
+    background-position: top;   
+    border-radius: 3%;  
+}
+
+.box-header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 3%;
+}
+
+.box-img{
+    height: 130px;
+    width: 130px;
+}
+
+.header{
+    margin-top: 25px;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: .7rem;
+}
+
+.subheader{
+    font-weight: 200;
+}
+
+.box-text{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7em;
+    margin: 40px; 
+    margin-top: -10px;
+}
+
+@media only screen and (max-width: 85em){
+.experience{  
+    display: grid;
+    padding: 1%;
+}
+.box{
+margin: 30px;
+}
+}
