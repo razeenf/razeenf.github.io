@@ -11,18 +11,18 @@
     
     /* Track */
     ::-webkit-scrollbar-track {
-    background: #000000;
+    background: rgb(45, 44, 56);
     }
     
     /* Handle */
     ::-webkit-scrollbar-thumb {
-    background: rgb(81, 0, 148);
+    background: rgb(147, 148, 158);
     border-radius: 50px 50px 50px 50px;
     }
     
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-    background: rgb(64, 1, 100);
+    background: rgb(120, 121, 122);
     }
     
 
@@ -52,7 +52,7 @@
 
 .navbar ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(147, 148, 158);
     text-transform: uppercase;
 }
 
@@ -60,7 +60,7 @@
     content: '';
     width: 0%;
     height: 2.5px;
-    background: rgb(137, 84, 223);
+    background: rgb(147, 148, 158);
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -76,7 +76,7 @@
     position: absolute;
     top: 25%;
     text-align: center;
-    color: rgb(137, 84, 223);
+    color: rgb(147, 148, 158);
 }
 
 .intro h1{
@@ -93,7 +93,7 @@
 .intro img{
     width: 15%;
     height: 15%;
-    border: 3px solid rgb(137, 84, 223);
+    border: 3px solid rgb(147, 148, 158);
     border-radius: 50%;
 }
 
@@ -103,13 +103,13 @@
     align-items: center;
     position: relative; 
     width: 100%; 
-    background-color: rgb(137, 84, 223);
+    background-color: rgb(45, 44, 56);
 }
 
 .projTitle{
     text-align: center;
-    color: rgb(81, 0, 148);
-    background-color: rgb(137, 84, 223);
+    color: rgb(147, 148, 158);
+    background-color: rgb(45, 44, 56);
 }
 
 .grid{
@@ -120,7 +120,7 @@
 }
 
 .grid-item{
-    background-color: rgb(81, 0, 148);
+    background-color: rgb(45, 44, 56);
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .95);
@@ -142,7 +142,7 @@
 .card-content{
     padding: 1rem;
     padding-left: 1rem;
-    color: whitesmoke;
+    color: rgb(147, 148, 158);
 }
 
 .card-header{
@@ -175,10 +175,10 @@
 }
 
 .languages{
-    background-color: rgb(81, 0, 148);
+    background-color: rgb(147, 148, 158);
     padding: 40px;
     text-align: center;
-    color: rgb(137, 84, 223);
+    color: rgb(45, 44, 56);
 }
 
 .languages img{
@@ -193,35 +193,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(137, 84, 223);
+    background-color: rgb(45, 44, 56);
     padding-bottom: 2%;
 }
 
 .expTitle{
-    color: rgb(81, 0, 148);
+    color: rgb(147, 148, 158);
     text-align: center;
-    background-color: rgb(137, 84, 223);
+    background-color: rgb(45, 44, 56);
     padding-top: 48px;
 }
 
 .box{
-    color: whitesmoke;
+    color: rgb(147, 148, 158);
     line-height: 1.5em;
     margin: 60px;
-    border: 5px solid rgb(81, 0, 148);
+    border: 5px solid rgb(147, 148, 158);
     border-radius: 1rem;
     letter-spacing: 0.1rem;
 }
 
 .box-banner1{
-    background-image: linear-gradient(rgb(137, 84, 223, .7), rgb(137, 84, 223, 1)), url(r3Banner.jpg);
+    background-image: linear-gradient(rgb(45, 44, 56, .75), rgb(45, 44, 56, 1)), url(r3Banner.jpg);
     background-size: 100%;
     background-position: top;
     border-radius: 3%;
 }
 
 .box-banner2{
-    background-image: linear-gradient(rgb(137, 84, 223, .8), rgb(137, 84, 223, 1)), url(ruBanner.jpg);
+    background-image: linear-gradient(rgb(45, 44, 56, .75), rgb(45, 44, 56, 1)), url(ruBanner.jpg);
     background-size: 100%;
     background-position: top;   
     border-radius: 3%;  
@@ -259,11 +259,11 @@
 }
 
 @media only screen and (max-width: 85em){
-.experience{  
-    display: grid;
-    padding: 1%;
-}
-.box{
-margin: 30px;
-}
+    .experience{  
+        display: grid;
+        padding: 1%;
+    }
+    .box{
+        margin: 30px;
+    }
 }
