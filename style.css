@@ -29,7 +29,7 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, .9)), url(background.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, .95)), url(background.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -125,6 +125,11 @@
     overflow: hidden;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .95);
     transition: 0.2s;
+    cursor: pointer;
+}
+
+.grid-item a{
+    text-decoration: none;
 }
 
 .grid-item:hover{
@@ -142,7 +147,7 @@
 .card-content{
     padding: 1rem;
     padding-left: 1rem;
-    color: rgb(255, 255, 255);
+    color: rgb(184, 184, 185);
 }
 
 .card-header{
@@ -165,8 +170,8 @@
     }
 
     .projects{
-        padding-top: 3rem;
-        padding-bottom: 5rem;
+        padding-top: 4rem;
+        padding-bottom: 7rem;
     }
 
     .projTitle{
@@ -174,28 +179,63 @@
     }
 }
 
+@-webkit-keyframes slide_animation{
+    0% {left:0px}
+    10%{left:0px}
+    20%{left:1000px}
+    30%{left:1000px}
+    40%{left:1000px}
+    50%{left:1000px}
+    60%{left:1000px}
+    70%{left:00px}
+    80%{left:0px}
+    90%{left:0px}
+    100%{left:0px}
+}
+
 .languages{
-    background-color: rgb(147, 148, 158);
-    padding: 40px;
-    text-align: center;
-    color: rgb(45, 44, 56);
-}
-
-.languages img{
-    height: 100px;
-    width: 100px;
-    padding: 25px;
-    padding-right: 50px;
-}
-
-.experience{
-    position: relative;  
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(45, 44, 56);
-    padding-left:3.5%;
-    padding-right:5%;
+    background-color: rgb(147, 148, 158);
+}
+
+.lanTitle{
+    color: rgb(45, 44, 56);
+    text-align: center;
+    background-color: rgb(147, 148, 158);
+    padding-top: 40px;
+}
+
+.slider-frame{
+    padding: 0;
+    margin: 10px;
+    background-color: rgb(147, 148, 158);
+    overflow: hidden;
+    height: 140px;
+    width: 1000px;
+    padding-bottom: 25px;
+}
+
+
+.slide-imgs{
+    width: 2000px;
+    position: relative;
+    margin: 0 0 0 -1000px;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: reverse;
+    -webkit-animation-play-state: running;
+    
+}
+
+.img-container img{
+    height: 100px;
+    width: 100px;
+    margin-top: -20;
+    padding: 50px;
+    float: left;
 }
 
 .expTitle{
@@ -205,74 +245,66 @@
     padding-top: 48px;
 }
 
+.experience{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 44, 56);
+    padding: 3.5% 15% 1% 15%;
+}
+
 .box{
-    color: rgb(255, 255, 255);
     line-height: 1.5em;
-    margin: 70px;
-    border: 5px solid rgb(147, 148, 158);
-    border-radius: 1rem;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
     letter-spacing: 0.1rem;
 }
 
-.box-banner1{
-    background-image: linear-gradient(rgb(45, 44, 56, .75), rgb(45, 44, 56, 1)), url(r3Banner.jpg);
-    background-size: 100%;
-    background-position: top;
-    border-radius: 3%;
-}
-
-.box-banner2{
-    background-image: linear-gradient(rgb(45, 44, 56, .75), rgb(45, 44, 56, 1)), url(ruBanner.jpg);
-    background-size: 100%;
-    background-position: top;   
-    border-radius: 3%;  
-}
-
-.box-header{
+.head{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: left;
-    padding: 3%;
+    margin-left: -12px;
 }
 
 .box-img{
-    height: 130px;
-    width: 130px;
+    height: 100px;
+    width: 100px;
+    padding-right: 30px;
+    margin-top: -15px;
 }
 
-.header{
-    margin-top: 25px;
-    font-size: 2rem;
-    font-weight: 200;
-    margin-bottom: .7rem;
+
+.title{
+    color: rgb(147, 148, 158);
+    width: 350px;
 }
 
-.subheader{
-    font-weight: 200;
-}
-
-.box-text{
+.text{
+    color: rgb(184, 184, 185);
     font-size: 1rem;
     letter-spacing: 0.1rem;
     line-height: 1.7em;
-    margin: 40px; 
-    margin-top: -10px;
+    margin-left: 80px; 
+    margin-top: -8px; 
+    width: 750px;
 }
 
-@media only screen and (max-width: 97em){
+@media only screen and (max-width: 85em){
     .experience{  
-        display: grid;
-        padding: 17%;
+        padding: 10%;
         padding-bottom: 1%;
         padding-top: 5%;
     }
     .box{
-        margin-top: -20px;
+	padding: 20px;
+        display: grid;
     }
-    .box-header{
-        line-height: 2rem;
+    .text{
+        margin-left: 0px; 
+        margin-top: 10px; 
     }
-    .header{
-        margin-bottom: 0%;
-    }
+
 }
