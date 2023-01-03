@@ -75,7 +75,7 @@
 .intro {
 	width: 100%;
 	position: absolute;
-	top: 25%;
+	top: 20%;
 	text-align: center;
 	color: rgb(147, 148, 158);	
 }
@@ -87,7 +87,7 @@
 }
 
 .intro p {
-	font-size: 1rem;
+	font-size: 15px;
 	line-height: 1.7em;
 	font-family: 'Roboto Mono', monospace;
 	padding-left: 15%;
