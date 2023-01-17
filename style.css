@@ -378,6 +378,14 @@ html{scroll-behavior:smooth}
 	word-wrap: break-word;	
 }
 
+.footer {
+	color: rgb(147, 148, 158);
+	text-align: center;
+	background-color: rgb(30,33,36);
+	font-family: 'Roboto Mono', monospace;
+	padding-bottom: 20px;
+}
+
 @media only screen and (max-width: 85em) {
 	.experience {
 		padding: 10%;
