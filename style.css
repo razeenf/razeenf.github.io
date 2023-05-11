@@ -339,11 +339,11 @@ html{scroll-behavior:smooth}
 
 .box {
 	line-height: 1.5em;
-	margin-bottom: 70px;
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
 	letter-spacing: 0.1rem;
+	padding: 2.5rem;
 }
 
 .head {
@@ -379,7 +379,7 @@ html{scroll-behavior:smooth}
 }
 
 .footer {
-	color: rgb(147, 148, 158);
+	color: #93949e;
 	text-align: center;
 	background-color: rgb(30,33,36);
 	font-family: 'Roboto Mono', monospace;
@@ -400,4 +400,11 @@ html{scroll-behavior:smooth}
 		margin-left: 0px;
 		margin-top: 10px;
 	}
+}
+
+.experience hr {
+	border: 1px solid rgb(40,43,48);
+	width: 77%;
+	align-items: center;
+	margin: auto;
 }
