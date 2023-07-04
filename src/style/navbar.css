@@ -1,0 +1,128 @@
+.nav {
+    float: right;
+    padding-right: 2.5rem;
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 2rem;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .nav li {
+    padding-top: 0.5rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    position: relative;
+    font-size: 1.4rem;
+  }
+  
+  .nav img {
+    width: 5em;
+    border: 12px solid;
+    -webkit-border-image: url(../assets/menu_border.png) 15 12 15 15 stretch;
+    -o-border-image: url(../assets/menu_border.png) 15 12 15 15 stretch;
+    border-image: url(../assets/menu_border.png) 15 12 15 15 stretch; /* Top Right Bottom Left */
+  }
+  
+  .nav img:hover,
+  .nav img:focus {
+    transition: ease 1s;
+    cursor: url(../assets/pointer_cursor.png), pointer;
+    transform: scale(1.05);
+    transition: ease 0.25s;
+  }
+  
+  .nav li:not(:first-child) a {
+    color: #5d270c;
+  }
+  
+  .nav li:not(:first-child) a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.8rem;
+    background-color: #dd8b20;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav li:not(:first-child) a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  .nav li:not(:first-child) a.active::before {
+    width: 100%;
+    height: 0.8rem;
+    background-color: #dd8b20;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(1);
+  }
+  
+/* Mobile */
+@media (max-width: 480px) {
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 0;
+    }
+  
+    .nav ul {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .nav li {
+      padding-top: 0.5rem;
+      margin: 0 0.5rem;
+    }
+  
+    .nav img {
+      width: 100px;
+    }
+  
+    .nav a {
+      color: #5d270c;
+      position: relative;
+      text-decoration: none;
+    }
+  
+    .nav a:hover::before,
+    .nav a:focus::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  
+    .nav a.active::before {
+      width: 100%;
+      height: 0.8rem;
+      background-color: #dd8b20;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      transform: scaleX(1);
+    }
+  }
+  
+
+  
+  
+  
+  
+  
+  

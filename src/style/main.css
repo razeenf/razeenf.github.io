@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Stardew_Valley.ttf') format('truetype');
+}
+
+.socials ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    font-size: 13px;
+}
+
+.main .socials i {
+    color: #5d270c;
+}
+
+.main{
+    max-width: 90%;
+}
+
+.main .socials li {
+    padding-right: 20px;
+}
+
+.info p{
+    width: auto;
+    max-width: 550px;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.3; /* Adjust the value to create the desired spacing */
+}
+
+.main .socials i:hover {
+    color: #dd8b20;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    cursor: url(../assets/pointer_cursor.png), pointer;
+}
+
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap; /* Add this line */
+    word-wrap: break-word;
+    font-size: 3rem;
+    font-family: 'CustomFont', sans-serif;
+    margin-bottom: -8px;
+    margin-top: 5px;
+}
+
+.letter{
+    color: #dd8b20;
+    text-shadow: 2px 2px #704d00;
+}
+ 
+
+a, a:visited {
+    text-decoration: none;
+    color: #dd8b20;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #dd8b20;
+    transition: ease 0.2s;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .name {
+        font-size: 3.7rem;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+  
+    .main {
+      padding: 10px;
+      margin-top: 100px;
+    }
+  
+    .info > p {
+      width: 100%;
+      font-size: 1rem;
+      text-align: center;
+      margin: auto;
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+  
+    .socials ul {
+      justify-content: center;
+      font-size: 15px;
+    }
+  
+    .socials li {
+      padding-left: 20px;
+    }
+  }
+  
+
