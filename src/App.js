@@ -1,10 +1,10 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./Navbar";
 import Main from "./pages/Main";
 import Experience from "./pages/Experience";
-import Projects from './pages/Projects';
+import Projects from "./pages/Projects";
 
 function App() {
   return (

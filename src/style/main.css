@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
     font-family: 'CustomFont';
     src: url('../fonts/Stardew_Valley.ttf') format('truetype');
@@ -16,7 +17,7 @@
     color: #5d270c;
 }
 
-.main{
+.main {
     max-width: 90%;
 }
 
@@ -24,12 +25,13 @@
     padding-right: 20px;
 }
 
-.info p{
+.info p {
     width: auto;
     max-width: 550px;
     font-size: 1rem;
     text-align: left;
-    line-height: 1.3; /* Adjust the value to create the desired spacing */
+    line-height: 1.3;
+    /* Adjust the value to create the desired spacing */
 }
 
 .main .socials i:hover {
@@ -45,7 +47,8 @@
 .name {
     display: flex;
     flex-wrap: wrap;
-    white-space: nowrap; /* Add this line */
+    white-space: nowrap;
+    /* Add this line */
     word-wrap: break-word;
     font-size: 3rem;
     font-family: 'CustomFont', sans-serif;
@@ -53,13 +56,14 @@
     margin-top: 5px;
 }
 
-.letter{
+.letter {
     color: #dd8b20;
     text-shadow: 2px 2px #704d00;
 }
- 
 
-a, a:visited {
+
+a,
+a:visited {
     text-decoration: none;
     color: #dd8b20;
     font-weight: 600;
@@ -79,27 +83,27 @@ a:hover {
         display: flex;
         justify-content: center;
     }
-  
+
     .main {
         padding: 10px;
         margin-top: 50px;
     }
-  
-    .info > p {
+
+    .info>p {
         font-size: .85rem;
         margin: auto;
         padding-bottom: 10px;
         padding-top: 30px;
         text-align: center;
-        width: 85%;
+        width: 90%;
     }
-  
+
     .socials ul {
         justify-content: center;
         font-size: 15px;
     }
-  
+
     .socials li {
         padding-left: 20px;
     }
-  }
+}
