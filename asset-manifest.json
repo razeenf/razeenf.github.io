@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.e346fbfd.css",
+    "main.css": "/static/css/main.717a736e.css",
     "main.js": "/static/js/main.c305bc03.js",
     "static/media/tmu.png": "/static/media/tmu.d4cc10976f9e96aa3938.png",
     "static/media/p5.png": "/static/media/p5.8c4a7af8f7c32a81d94a.png",
@@ -11,11 +11,11 @@
     "static/media/p2.png": "/static/media/p2.fd67d4e256a10b11a861.png",
     "static/media/Stardew_Valley.ttf": "/static/media/Stardew_Valley.94d4418a519004763596.ttf",
     "index.html": "/index.html",
-    "main.e346fbfd.css.map": "/static/css/main.e346fbfd.css.map",
+    "main.717a736e.css.map": "/static/css/main.717a736e.css.map",
     "main.c305bc03.js.map": "/static/js/main.c305bc03.js.map"
   },
   "entrypoints": [
-    "static/css/main.e346fbfd.css",
+    "static/css/main.717a736e.css",
     "static/js/main.c305bc03.js"
   ]
 }
