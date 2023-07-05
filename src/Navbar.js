@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <ul>
-        <ProfileImage to="/">ABOUT</ProfileImage>
+        <ProfileImage to="/">HOME</ProfileImage>
         <CustomLink to="/experience">EXPERIENCE</CustomLink>
         <CustomLink to="/projects">PROJECTS</CustomLink>    
       </ul>
