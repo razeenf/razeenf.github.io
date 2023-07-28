@@ -47,7 +47,6 @@
     display: flex;
     flex-wrap: wrap;
     white-space: nowrap;
-    /* Add this line */
     word-wrap: break-word;
     font-size: 3rem;
     font-family: 'CustomFont', sans-serif;
@@ -105,5 +104,18 @@ a:hover {
 
     .socials li {
         padding-left: 20px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1100px) and (min-width: 481px) {
+    .info>p {
+        font-size: 0.85rem;
+        width: 125%;
+    }
+
+    .name {
+        font-size: 2.5rem;
+        width: 150%;
     }
 }

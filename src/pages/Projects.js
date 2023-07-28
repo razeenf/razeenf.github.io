@@ -63,7 +63,7 @@ const ProjectGrid = () => {
           stuff i've worked on in the past.
         </Fade>
       </h1>
-      <Fade delay={300} triggerOnce="True">
+      <Fade delay={150} triggerOnce="True">
         <div className="project-grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
