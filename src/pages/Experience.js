@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import soti from "../assets/soti.png";
+import r3 from "../assets/r3.png";
 import tmu from "../assets/tmu.png";
 import amd from "../assets/amd.png";
+import soti from "../assets/soti.png";
 import { Fade } from "react-awesome-reveal";
 
 function Collapsible({
@@ -12,16 +13,19 @@ function Collapsible({
   dates,
   tools,
   description,
+  isExpanded,
+  onToggleCollapse,
 }) {
-  const [isExpanded, setIsExpanded] = useState(false);
-
   const toggleCollapse = () => {
-    setIsExpanded(!isExpanded);
+    onToggleCollapse(!isExpanded); // Toggle the collapse state
   };
 
   return (
-    <div className="collapsible" onClick={toggleCollapse}>
-      <div className={isExpanded ? "exp-box expanded" : "exp-box"}>
+    <div className="collapsible">
+      <div
+        className={isExpanded ? "exp-box expanded" : "exp-box"}
+        onClick={toggleCollapse}
+      >
         <div className="header">
           <h2 className="left">
             <div className="pic">
@@ -59,22 +63,32 @@ function Collapsible({
 }
 
 export default function Experience() {
+  const [openCollapsibleIndex, setOpenCollapsibleIndex] = useState(null);
+
+  const handleToggleCollapse = (index) => {
+    setOpenCollapsibleIndex((prevIndex) =>
+      prevIndex === index ? null : index
+    );
+  };
+
   return (
     <div className="experience">
       <div className="exp-header">
-        <Fade cascade duration={100} triggerOnce="True">
+        <Fade cascade duration={100} triggerOnce={true}>
           where i've been before...
         </Fade>
       </div>
-      <Fade cascade damping={0.25} triggerOnce="True">
+      <Fade cascade damping={0.25} triggerOnce={true}>
         <Collapsible
           pic={soti}
           title="Software Developer Intern"
-          link="https://soti.net/products/soti-mobicontrol/"
+          link=""
           location="SOTI"
           dates="Sep 2023 - Apr 2024"
-          tools="C#, .NET, AngularJS, HTML, CSS, SQL"
-          description="Incoming Software Developer at SOTI, Working with the MobiControl Team."
+          tools="C# · .NET · AngularJS · TypeScript · SQL Server"
+          description="Working on the MobiControl team servicing SOTIs flagship Enterprise Mobility Management solution.  "
+          isExpanded={openCollapsibleIndex === 0}
+          onToggleCollapse={() => handleToggleCollapse(0)}
         />
         <Collapsible
           pic={amd}
@@ -82,10 +96,10 @@ export default function Experience() {
           link="https://www.amd.com/en/graphics/server-cloud-gaming"
           location="Advanced Micro Devices"
           dates="May 2022 - Apr 2023"
-          tools="Python, Bash, Docker, Git, AWS, Azure, Linux"
-          description="Streamlined and enhanced efficiency by automating manual processes using Python and Bash scripts. 
-        Implemented continuous integration and deployment pipelines for seamless software releases. 
-        Managed infrastructure and optimized system performance through monitoring and analysis."
+          tools="Python · Bash · Docker · Git · AWS · Linux"
+          description="Worked on the engineering team for AMDs cloud gaming & VDI data center GPUs (AMD Radeon™ PRO V620) and software products. "
+          isExpanded={openCollapsibleIndex === 1}
+          onToggleCollapse={() => handleToggleCollapse(1)}
         />
         <Collapsible
           pic={tmu}
@@ -93,12 +107,21 @@ export default function Experience() {
           link="https://www.torontomu.ca/inclusive-media/research-themes/"
           location="Toronto Metro University"
           dates="Sep 2021 - Dec 2021"
-          tools="React, Django, HTML, CSS, Python"
-          description="
-        Contributed to a Python-based web app using NLP for speech and motor-impaired users. 
-        Improved accessibility with a React-based breadcrumb menu. 
-        Implemented Python testing for better code quality. 
-        Conducted research and analyzed data to implement new features."
+          tools="React · Django · HTML · CSS · Python"
+          description="Worked with Dr. Deborah Fels team in building a web app using React, Django, and NLP to facilitate communication for individuals with speech and motor impairments."
+          isExpanded={openCollapsibleIndex === 2}
+          onToggleCollapse={() => handleToggleCollapse(2)}
+        />
+        <Collapsible
+          pic={r3}
+          title="Software Developer"
+          link=""
+          location="Toronto MetRobotics"
+          dates="Oct 2021 - Sep 2021"
+          tools="Python · C++ · OpenCV · Robot Operating System (ROS) · Microcontrollers"
+          description="Assisted in the development of the URC SAR Rover to participate in the University Rover Challenge. Developed embedded software in C++ and rover controls software in Python."
+          isExpanded={openCollapsibleIndex === 3}
+          onToggleCollapse={() => handleToggleCollapse(3)}
         />
       </Fade>
     </div>

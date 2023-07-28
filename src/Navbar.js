@@ -1,5 +1,5 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import me from "./assets/me.jpg";
+import me from "./assets/me.png";
 import React, { useEffect, useState } from "react";
 
 export default function Navbar() {

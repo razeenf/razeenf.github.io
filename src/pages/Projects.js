@@ -13,7 +13,7 @@ const projects = [
     image: p1,
     description:
       "A Discord bot that helps you track Amazon.ca products for price drops.",
-    link: "https://bit.ly/Price-Tracker-Bot",
+    link: "https://price-tracker-bot.netlify.app/",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ const projects = [
     title: "this.website",
     image: p5,
     description: "My personal portfolio website v2.",
-    link: "https://github.com/razeenf/Bookstore-App",
+    link: "https://www.razeenf.com/",
   },
 ];
 

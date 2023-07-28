@@ -21,15 +21,24 @@
     border-top-color: #eca728;
     border-left-color: #944313;
     border-right-color: #eca728;
-    box-shadow: -8px 8px 5px;
+    box-shadow: -9px 9px 3px #af8c5e;
     outline: 4px solid #5b321f;
   }
 
   .experience .exp-box:not(.expanded):hover {
-    box-shadow: -12px 12px 10px;
-    transform: translateY(-0.5%);
-    transition: ease 0.1s;
+    box-shadow: none;
+    transform: translate(-3px, 3px);
+    transition: ease 0.2s;
   }
+
+
+
+  .experience .collapsible-content>ul {
+    margin: 0 20px 0 20px;
+    padding: 0;
+    list-style: none;
+  }
+
 
   /* endregion */
 
@@ -72,7 +81,8 @@
 
   /* box content */
   .experience ul li {
-    margin: 1rem 1rem 0 0;
+    margin-top: 1rem;
+    /* top right bottom left */
     font-size: .8rem;
     list-style-type: none;
   }

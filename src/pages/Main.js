@@ -17,12 +17,11 @@ export default function Main() {
       <Fade delay={600} triggerOnce="True">
         <div className="info">
           <p>
-            {" "}
             I'm a computer engineering senior at Ryerson University with a
-            passion for tech and software development. I have previously
-            interned at AMD and am currently interning as a software developer
-            at SOTI. My goal is to contribute to innovative projects and push
-            the boundaries of emerging technologies.
+            passion for tech and software development. I am currently interning
+            as a software developer at SOTI and have previously interned at AMD.
+            My goal is to contribute to innovative projects and push the
+            boundaries of emerging technologies.
           </p>
         </div>
         <div className="socials">
