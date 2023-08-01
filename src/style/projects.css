@@ -59,6 +59,10 @@
 }
 
 @media (max-width: 720px) and (min-width: 481px) {
+  .projects {
+    margin-left: -20px;
+  }
+
   .project-card {
     width: 200px;
     text-align: center;

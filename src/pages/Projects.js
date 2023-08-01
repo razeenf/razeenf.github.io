@@ -14,6 +14,7 @@ const projects = [
     description:
       "A Discord bot that helps you track Amazon.ca products for price drops.",
     link: "https://price-tracker-bot.netlify.app/",
+    target: "_blank",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const projects = [
     description:
       "A simple way to manage and backup local files to your Google Drive.",
     link: "https://github.com/razeenf/CLI-Cloud-Backup-Tool",
+    target: "_blank",
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const projects = [
     description:
       "An extension that blocks distracting sites during an active Pomodoro timer.",
     link: "https://devpost.com/software/pomoturkey?ref_content=my-projects-tab&ref_feature=my_projects",
+    target: "_blank",
   },
   {
     id: 4,
@@ -37,13 +40,15 @@ const projects = [
     image: p4,
     description: "A bookstore Windows App to buy and sell books.",
     link: "https://github.com/razeenf/Bookstore-App",
+    target: "_blank",
   },
   {
     id: 5,
     title: "this.website",
     image: p5,
     description: "My personal portfolio website v2.",
-    link: "https://www.razeenf.com/",
+    link: "/",
+    target: "_self",
   },
 ];
 
@@ -57,7 +62,7 @@ const ProjectGrid = () => {
   }, []);
 
   return (
-    <div>
+    <div className="projects">
       <h1 className="proj-header">
         <Fade cascade duration={100} triggerOnce="True">
           stuff i've worked on in the past.
@@ -67,7 +72,11 @@ const ProjectGrid = () => {
         <div className="project-grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={project.link}
+                target={project.target}
+                rel="noopener noreferrer"
+              >
                 <img src={project.image} alt={project.title} />
               </a>
               <h3>{project.title}</h3>

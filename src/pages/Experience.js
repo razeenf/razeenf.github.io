@@ -97,7 +97,7 @@ export default function Experience() {
           location="Advanced Micro Devices"
           dates="May 2022 - Apr 2023"
           tools="Python · Bash · Docker · Git · AWS · Linux"
-          description="Worked on the engineering team for AMDs cloud gaming & VDI data center GPUs (AMD Radeon™ PRO V620) and software products. "
+          description="Worked on the engineering team for AMDs Cloud Gaming & VDI data center GPUs (AMD Radeon™ PRO V620) and software products. "
           isExpanded={openCollapsibleIndex === 1}
           onToggleCollapse={() => handleToggleCollapse(1)}
         />
@@ -108,7 +108,7 @@ export default function Experience() {
           location="Toronto Metro University"
           dates="Sep 2021 - Dec 2021"
           tools="React · Django · HTML · CSS · Python"
-          description="Worked with Dr. Deborah Fels team in building a web app using React, Django, and NLP to facilitate communication for individuals with speech and motor impairments."
+          description="Assisted Dr. Deborah Fels team in the development of a web application utilizing React, Django and NLP to facilitate communication for individuals with speech and motor impairments."
           isExpanded={openCollapsibleIndex === 2}
           onToggleCollapse={() => handleToggleCollapse(2)}
         />
@@ -117,9 +117,9 @@ export default function Experience() {
           title="Software Developer"
           link=""
           location="Toronto MetRobotics"
-          dates="Oct 2021 - Sep 2021"
+          dates="Oct 2020 - Sep 2021"
           tools="Python · C++ · OpenCV · Robot Operating System (ROS) · Microcontrollers"
-          description="Assisted in the development of the URC SAR Rover to participate in the University Rover Challenge. Developed embedded software in C++ and rover controls software in Python."
+          description="Built the Navi Mars Rover in collaboration with 75+ team members to participate in the University Rover Challenge. Developed embedded software in C++ and rover controls software in Python."
           isExpanded={openCollapsibleIndex === 3}
           onToggleCollapse={() => handleToggleCollapse(3)}
         />
