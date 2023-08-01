@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.bd43a201.css",
-    "main.js": "./static/js/main.291cacf7.js",
-    "static/media/tmu.png": "./static/media/tmu.d4cc10976f9e96aa3938.png",
-    "static/media/p5.png": "./static/media/p5.8c4a7af8f7c32a81d94a.png",
-    "static/media/me.jpg": "./static/media/me.8617e2a421937c8a3559.jpg",
-    "static/media/p4.png": "./static/media/p4.6a105e44c174298509f7.png",
-    "static/media/p1.png": "./static/media/p1.45f99b55fa602d5c7458.png",
-    "static/media/p3.png": "./static/media/p3.23339efd8b54be2d7cb8.png",
-    "static/media/p2.png": "./static/media/p2.fd67d4e256a10b11a861.png",
-    "static/media/Stardew_Valley.ttf": "./static/media/Stardew_Valley.94d4418a519004763596.ttf",
-    "static/media/r3.jfif": "./static/media/r3.c341b6236b16771e2d1f.jfif",
-    "index.html": "./index.html",
-    "main.bd43a201.css.map": "./static/css/main.bd43a201.css.map",
-    "main.291cacf7.js.map": "./static/js/main.291cacf7.js.map"
+    "main.css": "/static/css/main.5e32a5a0.css",
+    "main.js": "/static/js/main.6b46df72.js",
+    "static/media/tmu.png": "/static/media/tmu.d4cc10976f9e96aa3938.png",
+    "static/media/p5.png": "/static/media/p5.8c4a7af8f7c32a81d94a.png",
+    "static/media/p4.png": "/static/media/p4.6a105e44c174298509f7.png",
+    "static/media/p1.png": "/static/media/p1.45f99b55fa602d5c7458.png",
+    "static/media/p3.png": "/static/media/p3.23339efd8b54be2d7cb8.png",
+    "static/media/r3.png": "/static/media/r3.ea0487679675b7835880.png",
+    "static/media/me.png": "/static/media/me.47aaabb2178e0df4d59e.png",
+    "static/media/p2.png": "/static/media/p2.fd67d4e256a10b11a861.png",
+    "static/media/Stardew_Valley.ttf": "/static/media/Stardew_Valley.94d4418a519004763596.ttf",
+    "index.html": "/index.html",
+    "main.5e32a5a0.css.map": "/static/css/main.5e32a5a0.css.map",
+    "main.6b46df72.js.map": "/static/js/main.6b46df72.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd43a201.css",
-    "static/js/main.291cacf7.js"
+    "static/css/main.5e32a5a0.css",
+    "static/js/main.6b46df72.js"
   ]
 }
