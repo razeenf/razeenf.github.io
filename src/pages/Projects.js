@@ -3,12 +3,22 @@ import p2 from "../assets/p2.png";
 import p3 from "../assets/p3.png";
 import p4 from "../assets/p4.png";
 import p5 from "../assets/p5.png";
+import p6 from "../assets/p6.png";
 import React, { useRef, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
 
 const projects = [
   {
-    id: 1,
+    id: 6,
+    title: "Hidden Gems",
+    image: p6,
+    description:
+      "Showcases user-submitted spots in various cities considered hidden gems.",
+    link: "https://hiddengemz.xyz",
+    target: "_blank",
+  },
+  {
+    id: 5,
     title: "Price Tracker Bot",
     image: p1,
     description:
@@ -17,7 +27,7 @@ const projects = [
     target: "_blank",
   },
   {
-    id: 2,
+    id: 5,
     title: "CLI Cloud Backup Tool",
     image: p2,
     description:
@@ -26,7 +36,15 @@ const projects = [
     target: "_blank",
   },
   {
-    id: 3,
+    id: 1,
+    title: "this.website",
+    image: p5,
+    description: "My personal portfolio website v2.",
+    link: "/",
+    target: "_self",
+  },
+  {
+    id: 4,
     title: "PomoTurkey Chrome Extension",
     image: p3,
     description:
@@ -35,20 +53,12 @@ const projects = [
     target: "_blank",
   },
   {
-    id: 4,
+    id: 2,
     title: "Bookstore App",
     image: p4,
     description: "A bookstore Windows App to buy and sell books.",
     link: "https://github.com/razeenf/Bookstore-App",
     target: "_blank",
-  },
-  {
-    id: 5,
-    title: "this.website",
-    image: p5,
-    description: "My personal portfolio website v2.",
-    link: "/",
-    target: "_self",
   },
 ];
 

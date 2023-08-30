@@ -92,7 +92,7 @@ export default function Experience() {
         />
         <Collapsible
           pic={amd}
-          title="DevOps Engineer Intern"
+          title="Cloud Engineer Intern"
           link="https://www.amd.com/en/graphics/server-cloud-gaming"
           location="Advanced Micro Devices"
           dates="May 2022 - Apr 2023"
